@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W60Iv2r42H1CKc4abXrVVLbkR1YW3j1swaaTAnR/WifrWE6lNsWiWNqnSaBRLVLk32gArV2K9FjypBGKqVj5tg==",
+  "dgSpecHash": "nmeIdbUCIsehzufHJo+mYKz88/fnG4Hhv8qVbJRZTgOCvFb81EVHeYgFkR7PgN450PGIE9ZJ/3Xk7X2OZX3Ftw==",
   "success": true,
-  "projectFilePath": "c:\\GameApi\\GameApi\\GameApi.csproj",
+  "projectFilePath": "C:\\GameApi\\GameApi\\GameApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

@@ -17,5 +17,19 @@ namespace GameApi.Controllers
             _gameList = _gameDB.GetAllGamesFromDB();
         }
 
+        [HttpGet("AllGameResults")]
+        public List<GameResults> GetGames()
+        {
+            return _gameList;
+        }
+
+        [HttpPost("AddGameResults")]
+        public int AddGameResults(GameResults gameResults) 
+        {
+            // the database returns the number of rows affected, should be 1
+            int rows = _gameDB.SaveGameResults(gameResults);
+            return rows;
+        }
+
     }
 }

@@ -22,6 +22,20 @@ namespace GameApi.Controllers
         {
             return _heroList;
         }
+        
+        [HttpGet("HerobyName")]
+        public Hero GetHeroByName(string lookupName) 
+        {
+            foreach(Hero h in this._heroList ) 
+            {
+                if ( h.HeroName == lookupName )
+                {
+                    return h;
+                } 
+            }
+
+            return null;
+        }
 
     }
 }

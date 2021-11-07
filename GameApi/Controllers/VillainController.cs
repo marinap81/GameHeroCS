@@ -18,9 +18,23 @@ namespace GameApi.Controllers
         }
 
         [HttpGet("AllVillains")]
-        public ActionResult GetVillains()
+        public List <Villain> GetVillains()
         {
-            return Ok(this._villainList);
+            return this._villainList;
+        }
+
+          [HttpGet("VillainbyName")]
+        public Villain GetVillainByName(string lookupName) 
+        {
+            foreach(Villain v in this._villainList ) 
+            {
+                if ( v.VillainName == lookupName )
+                {
+                    return v;
+                } 
+            }
+
+            return null;
         }
 
     }
